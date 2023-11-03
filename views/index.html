@@ -131,6 +131,109 @@
 
     </div>
 
+    <!-- <div class="max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-800 to-blue-950">
+        <div>
+            <div>
+                <a class="text-white font-bold absolute text-2xl pl-80 pt-8">Центр выявления и поддержки одарённых детей г.Севастополя</a>
+                <a class="text-white absolute pl-80 pt-20 pb-0">Информационная платформа</a>
+                <img class="relative" src="op.svg">
+                <ul class=" pl-80 pt-0">
+                    <li class="inline-block text-white">
+                        <a class="p-2 pl-0">О центре</a>
+                    </li>    
+                    <li class="inline-block text-white">
+                        <a class="p-2 font-bold">Профильные смены</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Интенсивные смены</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Новости</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">ТриУМфМАНия</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Большие вызовы</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Сириус Лето</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-800 to-blue-950 m-4 ">
+
+                <img class="sm:hidden xl:inline-block absolute pl-16 pt-8" src="logo.svg">
+                <a class="sm:hidden xl:inline-block text-white font-bold absolute text-2xl pl-60 pt-8">Центр выявления и поддержки одарённых детей г.Севастополя</a>
+                <a class="sm:hidden xl:inline-block text-white absolute pl-60 pt-20 pb-0">Информационная платформа</a>
+                <ul class="sm:hidden xl:block pl-60 pt-32 pb-8">
+                    <li class="inline-block text-white">
+                        <a class="p-2 pl-0">О центре</a>
+                    </li>    
+                    <li class="inline-block text-white">
+                        <a class="p-2 font-bold">Профильные смены</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Интенсивные смены</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Новости</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">ТриУМфМАНия</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Большие вызовы</a>
+                    </li>
+                    <li class="inline-block text-white">
+                        <a class="p-2">Сириус Лето</a>
+                    </li>
+                </ul>
+                <div class="grid grid-cols-3 gap-3 flex justify-between items-center xl:hidden p-2 mx-auto w-auto">
+                    <li class=" "></li>
+                    <img class="text-center justify-center mx-auto" src="./slovami.svg">
+                    <img class="right-0 absolute p-4 btn-menu" src="tripoloski.svg">
+                    <img class="hidden right-0 absolute p-4 btn-close" src="krestik.svg">
+                    <div class="max-w-screen-2xl mx-auto indigo-800 m-4"></div>
+                </div>
+
+                <div class="hidden text-white grid grid-cols-1 gap-1 flex text-center list-none justify-center xl:hidden pt-0 pb-10 mx-auto w-auto" id="text">
+                    <li >Главная</li>
+                    <li>О центре</li>
+                    <li class="font-bold bg-white text-black rounded-xl inline-block px-4">Профильные смены</li>
+                    <li>Интенсивные программы</li>
+                    <li>Новости</li>
+                    <li>Курсы</li>
+                    <li>ТриУМфМАНия</li>
+                    <li>Конкурс защиты НИР</li>
+                    <li>Большие вызовы</li>
+                    <li>Сириус.лето</li>
+                    <li>Личный кабинет</li>
+                </div>
+    </div>
+
+    <script>
+
+        let btnMenu = document.querySelector('.btn-menu');
+        let btnClose = document.querySelector('.btn-close');
+
+        btnMenu.addEventListener('click', () => {
+            btnMenu.classList.add('hidden');
+            btnClose.classList.remove('hidden');
+            document.getElementById('text').style.display = 'block';
+        });
+        
+        btnClose.addEventListener('click', () => {
+            btnMenu.classList.remove('hidden');
+            btnClose.classList.add('hidden');
+            document.getElementById('text').style.display = 'none';
+        });
+
+    </script>
+
 </body>
 
 </html>
