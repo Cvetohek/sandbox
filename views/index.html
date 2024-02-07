@@ -9,7 +9,7 @@
 
 <body>
  
-    <div class="max-w-screen-2xl mx-auto my-0 p-4">    
+    <!-- <div class="max-w-screen-2xl mx-auto my-0 p-4">    
         <div class="grid grid-cols-4 gap-4">
             <div class="bg-red-300 p-12 text-center col-span-4 md:col-span-2               xl:col-span-1">1</div>
             <div class="bg-red-300 p-12 text-center col-span-4 md:col-span-2               xl:col-span-1">2</div>
@@ -33,14 +33,198 @@
             <div class="bg-lime-300 p-12 text-center col-span-4 sm:col-span-2 md:col-span-4 lg:col-span-2 xl:col-span-3 2xl:col-span-1">7</div>
             <div class="bg-lime-300 p-12 text-center col-span-4 sm:col-span-2 md:col-span-4 lg:col-span-2 xl:col-span-1 2xl:col-span-3">8</div>
         </div>
+    </div> !-->
+
+    <div class="max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-800 to-blue-950 rounded-b-2xl relative mx-8 place-content-center ">
+
+        <img class="hidden sm:hidden xl:inline-block absolute pt-4" src="../public/svgkartinki/kryzki.svg">
+        <img class="hidden sm:hidden xl:inline-block absolute left-0 block " src="../public/svgkartinki/trslev.svg">
+        <img class="hidden sm:hidden xl:inline-block absolute right-0 bottom-0" src="../public/svgkartinki/trspr.svg">
+        <img class="hidden sm:hidden xl:inline-block absolute pl-16 pt-8 block" src="../public/svgkartinki/logo.svg">
+
+        <a class="hidden sm:hidden xl:inline-block text-white font-bold absolute text-2xl pl-60 pt-8">Центр выявления и поддержки одарённых детей г.Севастополя</a>
+        <a class="hidden sm:hidden xl:inline-block text-white absolute pl-60 pt-20 pb-0">Информационная платформа</a>
+        <ul class="hidden sm:hidden xl:block pl-60 pt-32 pb-8">
+            <li class="inline-block text-white">
+                <a class="p-2 pl-0">О центре</a>
+            </li>    
+            <li class="inline-block">
+                <a class="p-2 w-48 h-7 font-bold bg-white text-black rounded-xl font-bold">Профильные смены</a>
+            </li>
+            <li class="inline-block text-white">
+                <a class="p-2">Интенсивные смены</a>
+            </li>
+            <li class="inline-block text-white">
+                <a class="p-2">Новости</a>
+            </li>
+            <li class="inline-block text-white">
+                <a class="p-2">ТриУМфМАНия</a>
+            </li>
+            <li class="inline-block text-white">
+                <a class="p-2">Большие вызовы</a>
+            </li>
+            <li class="inline-block text-white">
+                <a class="p-2">Сириус Лето</a>
+            </li>
+        </ul>
+        <div class="grid grid-cols-3 gap-3 flex justify-between items-center xl:hidden mx-auto w-auto ">
+            <div><img class="top-0 justify-items-start h-fit" src="../public/svgkartinki/lev.svg"></div>
+            <div><img class="text-center justify-center mx-auto top-0 " src="../public/svgkartinki/slovami.svg"></div>
+
+            <div class="">
+                <img class="right-0 max-w-100 row-end-4 place-content-center" src="../public/svgkartinki/prav.svg">
+                <img class="right-0 absolute p-8 btn-menu h-20 sm:h-32 md:h-20 lg:h-20 -translate-y-20" src="../public/svgkartinki/tripoloski.svg">
+                <img class="hidden right-0 absolute p-8 btn-close -translate-y-20 " src="../public/svgkartinki/krestik.svg">
+            </div>
+            
+            <!--<div class="max-w-screen-2xl mx-auto indigo-800 m-4"></div>-->
+        </div>
+
+        <ul class="text hidden text-white grid grid-cols-1 gap-1 flex text-center list-none justify-center xl:hidden pt-0 pb-10">
+            <li>Главная</li>
+            <li>О центре</li>
+            <li class="font-bold bg-white text-black rounded-xl flex items-center justify-center place-self-center w-48 h-7 text-center">Профильные смены</li>
+            <li>Интенсивные программы</li>
+            <li>Новости</li>
+            <li>Курсы</li>
+            <li>ТриУМфМАНия</li>
+            <li>Конкурс защиты НИР</li>
+            <li>Большие вызовы</li>
+            <li>Сириус.лето</li>
+            <li>Личный кабинет</li>
+        </ul>
     </div>
 
-    <div class="max-w-screen-2xl mx-auto my-0 p-4 bg-stone-100">
+<script>
+
+let btnMenu = document.querySelector('.btn-menu');
+let btnClose = document.querySelector('.btn-close');
+let text = document.querySelector('.text');
+
+btnMenu.addEventListener('click', () => {
+    btnMenu.classList.add('hidden');
+    btnClose.classList.remove('hidden');
+    text.classList.remove('hidden');
+});
+
+btnClose.addEventListener('click', () => {
+    btnMenu.classList.remove('hidden');
+    btnClose.classList.add('hidden');
+    text.classList.add('hidden');
+});
+
+</script>
+
+    
+
+    <div class="max-w-screen-2xl mx-auto pt-4 bg-white items-start pb-0 p-8">
+
+        <div class="grid grid-cols-4 gap-4 rounded-b-2xl">
+
+            <div class="bg-stone-100 h-fit col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-b-xl">
+                <div class="p-8 text-center bg-teal-300">Подать заявление на обучение</div>
+                <div class="p-1 text-lg text-center bg-gray-300"></div>
+                <img src="../public/img/podatzayavlenie.png" class="w-full p-4">
+                <div class="text-center">Заполнение формы для очного обучения в центре дополнительного образования "Малая академия наук"</div>
+
+                <div class="text-center pb-4">
+                    <div class="inline-block p-2 bg-teal-300 text-center my-6">Перейти</div>
+                </div> 
+            </div>
+
+            <div class="bg-stone-100 h-fit col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-b-xl">
+                <div class="p-8 text-center bg-teal-300">Образовательная платформа</div>
+                <div class="p-1 text-lg text-center bg-gray-300"></div>
+                <img src="../public/img/obrazovatelnayaplatforma.png" class="w-full p-4">
+                <div class="text-center">Прохождение онлайн-курсов и участие в образовательных турнирах</div>
+
+                <div class="text-center pb-4">
+                    <div class="inline-block p-2 bg-teal-300 text-center my-6">Перейти</div>
+                </div> 
+            </div>
+
+            <div class="bg-stone-100 h-fit col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-b-xl">
+                <div class="p-8 text-center bg-teal-300">Платформа поддержки призеров конкурсов</div>
+                <div class="p-1 text-lg text-center bg-gray-300"></div>
+                <img src="../public/img/talant.jpeg" class="w-full p-4">
+                <div class="text-center">Подача данных об участии в конкурсах и олимпиадах учреждениями города</div>
+
+                <div class="text-center pb-4">
+                    <div class="inline-block p-2 bg-teal-300 text-center my-6">Перейти</div>
+                </div> 
+            </div>
+
+            <div class="bg-stone-100 h-fit col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-b-xl">
+                <div class="p-8 text-center bg-teal-300">Всероссийская олимпиада школьников</div>
+                <div class="p-1 text-lg text-center bg-gray-300"></div>
+                <img src="../public/img/vsosh-medium.png" class="w-full p-4">
+                <div class="text-center">Информационная страница Всероссийской олимпиады школьников</div>
+
+                <div class="text-center pb-4">
+                    <div class="inline-block p-2 bg-teal-300 text-center my-6">Перейти</div>
+                </div> 
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="max-w-screen-2xl mx-auto pt-4 bg-white items-start pb-0 p-8">
+        <div class="grid grid-cols-4 gap-4 rounded-2xl">
+
+            <div class="bg-[#005CE6] col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-xl">
+                <div class="p-2 text-left text-white">25.09.2023</div>
+                <div class="text-left p-2 text-white h-28">Как проходит профильная смена в «Ласпи» по направлению «Олимпиадная биология 10-11 класс»</div>
+                <img src="../public/svgkartinki/listiki.svg" class="p-4 mx-auto">
+                
+                <div class="text-center">
+                    <div class="inline-block p-2 border-white border-2 rounded-xl text-center mx-auto text-white mb-8">Читать далее</div>
+                </div> 
+            </div>
+
+            <div class="bg-[#00E8CE] col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-xl">
+                <div class="p-2 text-left text-white">20.09.2023</div>
+                <div class="text-left p-2 text-white h-28">Образовательные смены в Ласпи. Шахматы</div>
+                <img src="../public/svgkartinki/shahmaty.svg" class="p-4 mx-auto">
+                
+
+                <div class="text-center">
+                    <div class="inline-block p-2 border-white border-2 rounded-xl text-center mx-auto text-white mb-8">Читать далее</div>
+                </div> 
+            </div>
+
+            <div class="bg-[#FF5B8B] col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-xl">
+                <div class="p-2 text-left text-white">18.09.2023</div>
+                <div class="text-left p-2 text-white h-28">Список участников профильной смены «Олимпиадная история»</div>
+                <img src="../public/svgkartinki/papirys.svg" class="p-4 mx-auto">
+                
+
+                <div class="text-center">
+                    <div class="inline-block p-2 border-white border-2 rounded-xl text-center mx-auto text-white mb-8">Читать далее</div>
+                </div> 
+            </div>
+
+            <div class="bg-[#FF5B8B] col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-xl">
+                <div class="p-2 text-left text-white">18.09.2023</div>
+                <div class="text-left p-2 text-white h-28">Список участников профильной смены «Театральное искусство»</div>
+                
+                <img src="../public/svgkartinki/maski.svg" class="p-4 mx-auto">
+                
+
+                <div class="text-center">
+                    <div class="inline-block p-2 border-white border-2 rounded-xl text-center mx-auto text-white mb-8">Читать далее</div>
+                </div> 
+            </div>
+
+        </div>
+    </div>
+
+    <div class="max-w-screen-2xl mx-auto my-0 pt-4 p-8 pb-0">
 
         <div class="grid grid-cols-4 gap-4">
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Шахматы 2022.11</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Шахматы 2022.11</div>
                 <img src="../public/img/chess_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -50,7 +234,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Робототехника</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Робототехника</div>
                 <img src="../public/img/robo2_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -60,7 +244,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Олимпиадная математика 9-10 класс</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Олимпиадная математика 9-10 класс</div>
                 <img src="../public/img/olim_matem_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -70,7 +254,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Олимпиадная математика 7-8 класс</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Олимпиадная математика 7-8 класс</div>
                 <img src="../public/img/olim_matem2_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -83,12 +267,12 @@
 
     </div>
 
-    <div class="max-w-screen-2xl mx-auto my-0 p-4 pt-0 bg-stone-100">
+    <div class="max-w-screen-2xl mx-auto my-0 pt-4 pt-0 pb-24 p-8">
 
         <div class="grid grid-cols-4 gap-4">
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Олимпиадная физика 9-10 класс</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Олимпиадная физика 9-10 класс</div>
                 <img src="../public/img/olim_phys_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -98,7 +282,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Олимпиадная физика 8 класс</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Олимпиадная физика 8 класс</div>
                 <img src="../public/img/olim_phys2_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">   
@@ -108,7 +292,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Программирование на языке Scratch</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Программирование на языке Scratch</div>
                 <img src="../public/img/scratch_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -118,7 +302,7 @@
             </div>
 
             <div class="col-span-4 sm:col-span-2 md:col-span-2 lg:col-span-2 xl:col-span-1 2xl:col-span-1 rounded-t-xl">
-                <div class="bg-white p-4 text-center rounded-t-xl font-bold">Web-разработка</div>
+                <div class="p-4 text-center rounded-t-xl font-bold bg-stone-100">Web-разработка</div>
                 <img src="../public/img/web_1.png" class="w-full">
 
                 <div class="container p-2 text-black bg-neutral-200 rounded-b-xl">
@@ -130,6 +314,14 @@
         </div>
 
     </div>
+
+    
+        <img class="mx-auto" src="../public/svgkartinki/volna1.svg">
+       
+        
+        <!--<img class="xl:inline-block absolute left-0 -translate-y-48" src="../public/svgkartinki/levfooter.svg">
+        <img class="xl:inline-block absolute right-0 -translate-y-44" src="../public/svgkartinki/pravfooter.svg">-->
+    
 
     <!-- <div class="max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-800 to-blue-950">
         <div>
@@ -164,76 +356,7 @@
         </div>
     </div> -->
 
-    <div class="max-w-screen-2xl mx-auto bg-gradient-to-b from-indigo-800 to-blue-950 m-4 ">
-
-                <img class="hidden sm:hidden xl:inline-block absolute pl-16 pt-8" src="../public/svgkartinki/logo.svg">
-                <a class="hidden sm:hidden xl:inline-block text-white font-bold absolute text-2xl pl-60 pt-8">Центр выявления и поддержки одарённых детей г.Севастополя</a>
-                <a class="hidden sm:hidden xl:inline-block text-white absolute pl-60 pt-20 pb-0">Информационная платформа</a>
-                <ul class="hidden sm:hidden xl:block pl-60 pt-32 pb-8">
-                    <li class="inline-block text-white">
-                        <a class="p-2 pl-0">О центре</a>
-                    </li>    
-                    <li class="inline-block text-white">
-                        <a class="p-2 w-48 h-7 font-bold bg-white text-black rounded-xl font-bold">Профильные смены</a>
-                    </li>
-                    <li class="inline-block text-white">
-                        <a class="p-2">Интенсивные смены</a>
-                    </li>
-                    <li class="inline-block text-white">
-                        <a class="p-2">Новости</a>
-                    </li>
-                    <li class="inline-block text-white">
-                        <a class="p-2">ТриУМфМАНия</a>
-                    </li>
-                    <li class="inline-block text-white">
-                        <a class="p-2">Большие вызовы</a>
-                    </li>
-                    <li class="inline-block text-white">
-                        <a class="p-2">Сириус Лето</a>
-                    </li>
-                </ul>
-                <div class="grid grid-cols-3 gap-3 flex justify-between items-center xl:hidden p-2 mx-auto w-auto">
-                    <li class="list-none "></li>
-                    <img class="text-center justify-center mx-auto" src="../public/svgkartinki/slovami.svg">
-                    <img class="right-0 absolute p-4 btn-menu" src="../public/svgkartinki/tripoloski.svg">
-                    <img class="hidden right-0 absolute p-4 btn-close" src="../public/svgkartinki/krestik.svg">
-                    <div class="max-w-screen-2xl mx-auto indigo-800 m-4"></div>
-                </div>
-
-                <ul class="text hidden text-white grid grid-cols-1 gap-1 flex text-center list-none justify-center xl:hidden pt-0 pb-10">
-                    <li>Главная</li>
-                    <li>О центре</li>
-                    <li class="font-bold bg-white text-black rounded-xl flex items-center justify-center place-self-center w-48 h-7 text-center">Профильные смены</li>
-                    <li>Интенсивные программы</li>
-                    <li>Новости</li>
-                    <li>Курсы</li>
-                    <li>ТриУМфМАНия</li>
-                    <li>Конкурс защиты НИР</li>
-                    <li>Большие вызовы</li>
-                    <li>Сириус.лето</li>
-                    <li>Личный кабинет</li>
-                </ul>
-    </div>
-
-    <script>
-
-        let btnMenu = document.querySelector('.btn-menu');
-        let btnClose = document.querySelector('.btn-close');
-        let text = document.querySelector('.text');
-
-        btnMenu.addEventListener('click', () => {
-            btnMenu.classList.add('hidden');
-            btnClose.classList.remove('hidden');
-            text.classList.remove('hidden');
-        });
-        
-        btnClose.addEventListener('click', () => {
-            btnMenu.classList.remove('hidden');
-            btnClose.classList.add('hidden');
-            text.classList.add('hidden');
-        });
-
-    </script>
+    
 
 </body>
 
